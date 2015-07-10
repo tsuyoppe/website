@@ -1,2 +1,2 @@
 # website
-このページはMCSのホームページ[http://mcs-kutc.com/]のためのページです
+このページは[MCSのホームページ](http://mcs-kutc.com/)のためのページです
