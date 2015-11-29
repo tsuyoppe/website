@@ -163,6 +163,17 @@ input.footer, textarea.footer {
 	color:black;
 }
 
+.form_send{
+	text-align: right;
+}
+#footer_submitBtn{
+    padding: 0;
+    font-size: 1em;
+    background-color: #000;
+    color: #fff;
+    border-style: none;
+}
+
 
 /**	
 		placeholderの装飾
