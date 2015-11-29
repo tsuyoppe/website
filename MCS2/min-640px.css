@@ -100,17 +100,29 @@ a.footer {
 	list-style: none;
 	width:8em;
 	padding:0.5em;
+	text-align: center;
 }
 .footer_linkMain {
 	text-align:center;
 	font-size:1.3em;
 	margin-bottom:0.6em;
+	width:6em;
    border-bottom: 0.15em solid white;
+
 }
 .footer_linkSubSection {
 	text-align: left;	
-	padding:0.1em;
-	padding-left: 1em;
+	padding:0.1em;	
+}
+#footer_linkTop .footer_linkSubSection{
+	padding-left:2em;
+}
+#footer_linkAbout .footer_linkSubSection{
+	padding-left:1em;
+	width:7em;
+}
+#footer_linkWorks .footer_linkSubSection{
+	padding-left:1.8em;
 }
 
 
