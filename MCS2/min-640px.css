@@ -7,76 +7,60 @@
 
 
 .head {
-	magin:0 aute;
+	magin: 0 aute;
 }
-
-
-.head_btnLeft{
-	float:left;
+.head_btnLeft {
+	float: left;
 }
-
-.head_btnRight{
-	float:right;
-	padding:0;
+.head_btnRight {
+	float: right;
+	padding: 0;
 }
-.head_btnRight ul{
-	padding :0;
-	margin :0;
+.head_btnRight ul {
+	padding : 0;
+	margin : 0;
 }
-
-
-.head_btnLink{
-	float:left;
-	
+.head_btnLink {
+	float: left;
+	margin: 0;
 	list-style: none;
 }
-.head_map a{
-	color:#000000;
+.head_map a {
+	color: #000000;
 	text-decoration: none;
 	font-size: 1.4em;
 }
-.head_map{
-	clear:both;
+.head_map {
+	clear: both;
 	text-align: center;
 	border-bottom: 0.5em solid #525252;
-	padding:0;
-	margin:0;
+	padding: 0;
+	margin: 0;
 	background-color: #DBDBDB;
 }
-.head_map ul{
-	margin:0;
-	padding:0;
+.head_map ul {
+	margin: 0;
+	padding: 0;
 }
-
-.head_mapLink{
+.head_mapLink {
 	display: inline-block;
 	list-style: none;
-	padding:0.5em 0;
-	magin:0;
-	width:20%;
-	
+	padding: 0.5em 0;
+	magin: 0;
+	width: 20%;
 }
-
-#head_mapThis{
+#head_mapThis {
 	background-color: #525252;
 }
-#head_mapThis a{
-	color:#ffffff;
+#head_mapThis a {
+	color: #ffffff;
 }
-
-
-
 .top_topWrapper {
 }
 .top_topWrapper .main {
 }
 .top_mainWrapper {
 }
-
-
-
-
-
 /*	
 		フッター
 					*/
@@ -84,7 +68,7 @@
 	background-color: #000000;
 	color: #ffffff;
 	height: auto;
-	padding:0.1em 0;
+	padding: 0.1em 0;
 	text-align: center;
 }
 a.footer {
@@ -98,92 +82,80 @@ a.footer {
 	display: inline-block;
 	vertical-align: top;
 	list-style: none;
-	width:8em;
-	padding:0.5em;
+	width: 8em;
+	padding: 0.5em;
 	text-align: center;
 }
 .footer_linkMain {
-	text-align:center;
-	font-size:1.3em;
-	margin-bottom:0.6em;
-	width:6em;
-   border-bottom: 0.15em solid white;
-
+	text-align: center;
+	font-size: 1.3em;
+	margin-bottom: 0.6em;
+	width: 6em;
+	border-bottom: 0.15em solid white;
 }
 .footer_linkSubSection {
-	text-align: left;	
-	padding:0.1em;	
+	text-align: left;
+	padding: 0.1em;
 }
-#footer_linkTop .footer_linkSubSection{
-	padding-left:2em;
+#footer_linkTop .footer_linkSubSection {
+	padding-left: 2em;
 }
-#footer_linkAbout .footer_linkSubSection{
-	padding-left:0.5em;
-	width:7em;
+#footer_linkAbout .footer_linkSubSection {
+	padding-left: 0.5em;
+	width: 7em;
 }
-#footer_linkWorks .footer_linkSubSection{
-	padding-left:1.1em;
+#footer_linkWorks .footer_linkSubSection {
+	padding-left: 1.1em;
 }
-
-
-
 /**
 		 フォーム
 						**/
-.footer_form{
-	text-align:center;
+.footer_form {
+	text-align: center;
 }
-
-.form_message{
-	vertical-align:top;
+.form_message {
+	vertical-align: top;
 }
-.form_name{
+.form_name {
 }
-form.footer{
+form.footer {
 	/* フォームをページの中央に置く */
-    margin: 0 auto;
-    width:40em;
-    /* フォームの範囲がわかるようにする */
-    padding: 1em;
+	margin: 0 auto;
+	width: 40em;
+	/* フォームの範囲がわかるようにする */
+	padding: 1em;
 }
-#form_contact{
+#form_contact {
 	font-size: 1.4em;
-	width:6em;
-	margin:0em auto;
-   border-bottom: 0.15em solid white;
-	
+	width: 6em;
+	margin: 0em auto;
+	border-bottom: 0.15em solid white;
 }
-
 form.footer div + div {
-    margin-top: 0.05em;
+	margin-top: 0.05em;
 }
-
 input.footer, textarea.footer {
-    /* すべてのテキストフィールドのフォント設定を一致させる
+	/* すべてのテキストフィールドのフォント設定を一致させる
        デフォルトで、textarea は等幅フォントが設定されている */
-    font: 1em sans-serif;
-
-    /* すべてのテキストフィールドを同じサイズにする */
-    width: 30em;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    /* テキストフィールドのボーダーの外見を同一にする */
-    border: 1px solid #999;
-	
+	font: 1em sans-serif;
+	/* すべてのテキストフィールドを同じサイズにする */
+	width: 30em;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/* テキストフィールドのボーダーの外見を同一にする */
+	border: 1px solid #999;
 	background-color: #C0C0C0;
-	color:black;
+	color: black;
 }
-
-.form_send{
+.form_send {
 	text-align: right;
 }
-#footer_submitBtn{
-    padding: 0;
-    font-size: 1em;
-    background-color: #000;
-    color: #fff;
-    border-style: none;
+#footer_submitBtn {
+	padding: 0;
+	font-size: 1em;
+	background-color: #000;
+	color: #fff;
+	border-style: none;
 	cursor: pointer
 }
 
@@ -193,21 +165,26 @@ input.footer, textarea.footer {
 								**/
 /* Google Chrome, Safari, Opera 15+, Android, iOS*/
 ::-webkit-input-placeholder {
-    color: black;
-	padding-left: 0.5em ; }
+ color: black;
+ padding-left: 0.5em;
+}
 
 /*Firefox 18-*/
 :-moz-placeholder {
-    color: black; opacity: 1; 
-	padding-left: 0.5em ;}
+ color: black;
+opacity: 1;
+ padding-left: 0.5em;
+}
 
 /* Firefox 19+*/
 ::-moz-placeholder {
-    color: black; opacity: 1; 
-	padding-left: 0.5em ;}
+ color: black;
+opacity: 1;
+ padding-left: 0.5em;
+}
 
 /* IE 10+*/
 :-ms-input-placeholder {
-    color: black; 
-	padding-left: 0.5em ;}
-
+ color: black;
+ padding-left: 0.5em;
+}
