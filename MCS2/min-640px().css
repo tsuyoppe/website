@@ -62,6 +62,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	font-size: 0;/*inline-block間の隙間をなくす*/
 }
 /*マップボタンの幅と位置を管理*/
 a.head_mapLink {
@@ -73,6 +74,7 @@ a.head_mapLink {
 	list-style: none;
 	height: 100%;
 	width: 100%;
+	font-size: 24px;/*親要素の文字サイズが0であるため追加*/
 }
 #head_mapThis {
 	background-color: #525252;
@@ -119,16 +121,190 @@ a.head_mapLink {
 	height: 10%;
 	margin : 0 auto;
 	background-image: url("top_topUnder.png");
-	background-size: contain;/*position:absolute;
-bottom:0;*/
+	background-size: contain;
 }
-.try {
+/*
+	 Topページコンテンツ
+						*/
+.top_mainWrapper {
+	height: 180%;
+}
+.top_mainContainer {
+	margin: 0;
+}
+#SNSwrapper {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1em;
+}
+#top_mainContainerTwitter, #top_mainContainerFacefoock {
+	display: inline-block;
+	margin :0;
+}
+.top_mainObject {
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+.top_mainNameContainerWrapper {
+	width: 90%;
+	font-size: 0;/*inline-block間の隙間を埋める*/
+	margin: 0 auto 20px auto;
+}
+.top_mainNameContainerWrapperRight {
+	text-align: right;
+}
+.top_mainNameContainerWrapperLeft {
+	text-align: left;
+}
+ .top_mainNameContainerWrapperSNS{
+	width:82%; 
+ }
+
+/*idごとに矢印の長さを調節*/
+.top_mainNameContainer {
+	border-bottom: 0.2em solid black;
+	display: inline-block;
+}
+#top_mainNameContainerNow {
+	font-size: 25px;
+	width: 8em;
+	text-align:left;
+}
+#top_mainNameContainerNews {
+	font-size: 25px;
+	width: 10em;
+	text-align:right;
+}
+#top_mainNameContainerTwitter {
+	font-size: 25px;
+	width: 7em;
+	text-align:left;
+}
+#top_mainContainerFacebook{
+		font-size: 25px;
+	width: 8em;
+	text-align:right;
+}
+
+.top_mainName {
+	text-align: center;
+	color: black;
+	margin: 0;
+	border-top: 0.2em solid black;
+	border-left: 0.2em solid black;
+	border-right: 0.2em solid black;
+	padding: 0.2em;
+	display: inline-block;
+}
+#top_mainNameNow {
+	width: 65px;
+}
+#top_mainNameNews {
+	width: 90px;
+}
+#top_mainNameTwitter {
+	width: 95px;
+}
+#top_mainNameFacebook{
+	width: 120px;
+}
+
+.top_mainTryRight {
+	display: inline-block;
 	width: 0;
 	height: 0;
+	vertical-align: bottom;
 	border-style: solid;
-	border-width: 1em 0 0 2em;
-	border-color: transparent transparent transparent #007bff;
+	border-width: 15px 0 0 30px;
+	border-color: transparent transparent transparent #000000;
 }
+.top_mainTryLeft {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: bottom;
+	border-style: solid;
+	border-width: 0 0 15px 30px;
+	border-color: transparent transparent #000000 transparent;
+}
+
+#top_mainNow {
+	margin: 0;
+	width: 40em;
+	margin: 0 auto;
+}
+#top_mainNews {
+	margin: 0;
+	width: 40em;
+	margin: 0 auto;
+}
+#top_mainTwitter {
+	margin: 0;
+	width: 100%;
+	margin: 0 auto;
+}
+#top_mainFacebook{
+	margin: 0;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#top_mainNowContens {
+	height: 3em;
+	width: 80%;
+	margin: 0 auto;
+	background-color: #767676;
+}
+#top_mainNewsContens {
+	height: 5em;
+	width: 70%;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+#top_mainTwitterContens {
+	height: 25em;
+	width: 70%;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+#top_mainFacebookContens{
+	height: 25em;
+	width: 70%;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+.top_mainBgc {
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+#top_mainNowBgc {
+	height: 8em;
+	width: 40em;
+	background-color: #FDAA8F;
+	top: -5.3em;
+}
+#top_mainNewsBgc {
+	height: 9em;
+	width: 40em;
+	background-color: #FFD15F;
+	top: -7.1em;
+}
+#top_mainTwitterBgc {
+	height: 29em;
+	width: 18em;
+	background-color: #63FFA0;
+	top: -27em;
+}
+#top_mainFacebookBgc{
+	height: 29em;
+	width: 9em;
+	background-color: #D99AFF;
+	top: -27em;
+}
+
 /*	
 		フッター
 					*/
