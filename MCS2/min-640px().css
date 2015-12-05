@@ -6,6 +6,10 @@
 html, body{
 	height:100%;
 }
+#top_firstView{
+	height:100%;
+}
+
 
 /*
 		ヘッダー
@@ -100,8 +104,6 @@ a.head_mapLink{
 
 .top_topMCSWrap{
 	height:90%;
-	padding:17%;
-	/*padding:250px 0;*/
 	text-align: center;
 }
 
@@ -125,12 +127,12 @@ a.head_mapLink{
 }
 
 #top_topUnder{
-height: 6%;
+height: 10%;
 margin : 0 auto;
   background-image: url("top_topUnder().png");
   background-size:contain;
-position:absolute;
-bottom:0;
+/*position:absolute;
+bottom:0;*/
 }
 .try{
 	width: 0;
