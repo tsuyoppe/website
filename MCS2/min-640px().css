@@ -101,10 +101,10 @@ a.head_mapLink {
 	text-align: center;
 }
 .top_topName {
-	margin : auto;
 	width: 12em;
 	color: black;
 	border: 0.15em solid black;
+	margin: 0 auto;
 	background-color: rgba(255,255,255,0.7);
 }
 .top_topKansai {
@@ -127,28 +127,24 @@ a.head_mapLink {
 	 Topページコンテンツ
 						*/
 .top_mainWrapper {
-	height: 320%;
 }
 .top_mainContainer1 {
 	margin: 0;
 }
 .top_mainContainer2 {
 	display: inline-block;
-	margin :0;
+	margin : 0;
 }
-#top_mainContainerNews{
-	position:relative;
-	top:-40px;	
+#top_mainContainerNews {
+	position: relative;
+	top: -40px;
 }
 #SNSwrapper {
 	margin: 0 auto;
 	text-align: center;
-	position:relative;
-	top:-100px;
+	position: relative;
+	top: -100px;
 }
-
-
-
 .top_mainObject1 {
 	margin: 0 auto;
 	position: relative;
@@ -160,7 +156,6 @@ a.head_mapLink {
 	position: relative;
 	z-index: 2;
 }
-
 .top_mainNameContainerWrapper {
 	width: 90%;
 	font-size: 0;/*inline-block間の隙間を埋める*/
@@ -174,14 +169,13 @@ a.head_mapLink {
 }
 .top_mainNameContainerWrapperLeft {
 	text-align: left;
-		width: 90%;
+	width: 90%;
 	font-size: 0;/*inline-block間の隙間を埋める*/
 	margin: 0 auto 20px auto;
 }
- .top_mainNameContainerWrapperSNS{
-	width:82%; 
- }
-
+.top_mainNameContainerWrapperSNS {
+	width: 82%;
+}
 /*idごとに矢印の長さを調節*/
 .top_mainNameContainer {
 	border-bottom: 0.2em solid black;
@@ -190,25 +184,23 @@ a.head_mapLink {
 #top_mainNameContainerNow {
 	font-size: 25px;
 	width: 8em;
-	text-align:left;
+	text-align: left;
 }
 #top_mainNameContainerNews {
 	font-size: 25px;
 	width: 10em;
-	text-align:right;
+	text-align: right;
 }
 #top_mainNameContainerTwitter {
 	font-size: 25px;
 	width: 7em;
-	text-align:left;
+	text-align: left;
 }
-#top_mainNameContainerFacebook{
+#top_mainNameContainerFacebook {
 	font-size: 25px;
 	width: 7em;
-	text-align:right;
+	text-align: right;
 }
-
-
 .top_mainName {
 	text-align: center;
 	color: black;
@@ -228,11 +220,9 @@ a.head_mapLink {
 #top_mainNameTwitter {
 	width: 95px;
 }
-#top_mainNameFacebook{
-	width: 120px;
+#top_mainNameFacebook {
+	width: 110px;
 }
-
-
 .top_mainTryRight {
 	display: inline-block;
 	width: 0;
@@ -251,8 +241,6 @@ a.head_mapLink {
 	border-width: 0 0 15px 30px;
 	border-color: transparent transparent #000000 transparent;
 }
-
-
 #top_mainNowContens {
 	height: 3em;
 	width: 80%;
@@ -269,8 +257,6 @@ a.head_mapLink {
 	width: 70%;
 	margin: 0 auto;
 }
-
-
 .top_mainBgc {
 	margin: 0 auto;
 	position: relative;
@@ -300,8 +286,6 @@ a.head_mapLink {
 	background-color: #A27CFF;
 	top: -490px;
 }
-
-
 /*	
 		フッター
 					*/
@@ -311,6 +295,8 @@ a.head_mapLink {
 	height: auto;
 	padding: 0.1em 0;
 	text-align: center;
+	position:relative;
+	top:-70%;
 }
 a.footer {
 	color: #ffffff;
