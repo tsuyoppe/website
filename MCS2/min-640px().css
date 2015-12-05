@@ -127,25 +127,40 @@ a.head_mapLink {
 	 Topページコンテンツ
 						*/
 .top_mainWrapper {
-	height: 180%;
+	height: 320%;
 }
-.top_mainContainer {
+.top_mainContainer1 {
 	margin: 0;
+}
+.top_mainContainer2 {
+	display: inline-block;
+	margin :0;
+}
+#top_mainContainerNews{
+	position:relative;
+	top:-40px;	
 }
 #SNSwrapper {
 	margin: 0 auto;
 	text-align: center;
-	font-size: 1em;
+	position:relative;
+	top:-100px;
 }
-#top_mainContainerTwitter, #top_mainContainerFacefoock {
-	display: inline-block;
-	margin :0;
+
+
+
+.top_mainObject1 {
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+	width: 40em;
 }
-.top_mainObject {
+.top_mainObject2 {
 	margin: 0 auto;
 	position: relative;
 	z-index: 2;
 }
+
 .top_mainNameContainerWrapper {
 	width: 90%;
 	font-size: 0;/*inline-block間の隙間を埋める*/
@@ -153,9 +168,15 @@ a.head_mapLink {
 }
 .top_mainNameContainerWrapperRight {
 	text-align: right;
+	width: 90%;
+	font-size: 0;/*inline-block間の隙間を埋める*/
+	margin: 0 auto 20px auto;
 }
 .top_mainNameContainerWrapperLeft {
 	text-align: left;
+		width: 90%;
+	font-size: 0;/*inline-block間の隙間を埋める*/
+	margin: 0 auto 20px auto;
 }
  .top_mainNameContainerWrapperSNS{
 	width:82%; 
@@ -181,11 +202,12 @@ a.head_mapLink {
 	width: 7em;
 	text-align:left;
 }
-#top_mainContainerFacebook{
-		font-size: 25px;
-	width: 8em;
+#top_mainNameContainerFacebook{
+	font-size: 25px;
+	width: 7em;
 	text-align:right;
 }
+
 
 .top_mainName {
 	text-align: center;
@@ -210,6 +232,7 @@ a.head_mapLink {
 	width: 120px;
 }
 
+
 .top_mainTryRight {
 	display: inline-block;
 	width: 0;
@@ -229,26 +252,6 @@ a.head_mapLink {
 	border-color: transparent transparent #000000 transparent;
 }
 
-#top_mainNow {
-	margin: 0;
-	width: 40em;
-	margin: 0 auto;
-}
-#top_mainNews {
-	margin: 0;
-	width: 40em;
-	margin: 0 auto;
-}
-#top_mainTwitter {
-	margin: 0;
-	width: 100%;
-	margin: 0 auto;
-}
-#top_mainFacebook{
-	margin: 0;
-	width: 100%;
-	margin: 0 auto;
-}
 
 #top_mainNowContens {
 	height: 3em;
@@ -262,18 +265,11 @@ a.head_mapLink {
 	margin: 0 auto;
 	background-color: #ffffff;
 }
-#top_mainTwitterContens {
-	height: 25em;
+.top_mainSNSContens {
 	width: 70%;
 	margin: 0 auto;
-	background-color: #ffffff;
 }
-#top_mainFacebookContens{
-	height: 25em;
-	width: 70%;
-	margin: 0 auto;
-	background-color: #ffffff;
-}
+
 
 .top_mainBgc {
 	margin: 0 auto;
@@ -293,17 +289,18 @@ a.head_mapLink {
 	top: -7.1em;
 }
 #top_mainTwitterBgc {
-	height: 29em;
+	height: 515px;
 	width: 18em;
 	background-color: #63FFA0;
-	top: -27em;
+	top: -490px;
 }
-#top_mainFacebookBgc{
-	height: 29em;
-	width: 9em;
-	background-color: #D99AFF;
-	top: -27em;
+#top_mainFacebookBgc {
+	height: 515px;
+	width: 18em;
+	background-color: #A27CFF;
+	top: -490px;
 }
+
 
 /*	
 		フッター
