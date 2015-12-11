@@ -61,6 +61,76 @@
 }
 .top_mainWrapper {
 }
+
+
+
+
+/*
+		コンテンツ
+						*/
+
+　　/*　全体　*/					
+article.title{
+	width:1000px;
+	text-align:center;
+}
+
+h1{
+	font-size:50px;
+	padding:20px;
+	width:300px;
+	background-color:#FFFFFF;
+	border-style:solid;
+	border-width:5px;
+	text-align:center;
+}
+	
+	/*　about　*/
+article.about_mainWrapper{
+	width:640px;
+	margin:0 auto;
+}
+
+
+h2.about{
+	width:28px;
+	border-style:solid;
+	border-width:5px;
+	padding:5px;
+	display:inline-block;
+}
+
+.about_{
+	left:20px;
+	width:640px;
+	psition:absolute;
+}
+
+.about_title{
+	display:inline-block;
+}
+
+.about_department{
+	width:32%;
+}
+
+.about_department p{
+	top:50%;
+	left:50%;	
+	position:absolute;
+}
+	
+.about_departmentPhoto{	
+	height:180px;
+	width:180px;
+	margin-left:10px;
+	background-color:#67A3F2;
+	border-radius:20px;
+	position:relative;
+}
+
+
+
 /*	
 		フッター
 					*/
