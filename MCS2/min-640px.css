@@ -4,9 +4,12 @@
 
 /////////////////////////////////////////////////////////////////// */
 html, body {
-	width:100%;
 	height: 100%;
 	margin: 0;
+}
+
+li{
+	list-style: none;
 }
 /*
 		ヘッダー
@@ -14,10 +17,10 @@ html, body {
 					
 .head {
 	magin: 0 aute;
-	height: 15%;
+	height: 80px;
 }
 .head_btn {
-	height: 45%;
+	height: 45px;
 }
 .head_btnLeft {
 	float: left;
@@ -40,44 +43,41 @@ html, body {
 	float: left;
 	height: 90%;
 	margin: 0;
-	list-style: none;
 }
+
+
+/*
+	 head_map
+				*/
 .head_map {
 	clear: both;
 	text-align: center;
-	border-bottom: 0.4em solid #525252;
 	padding: 0;
 	margin: 0;
 	background-color: #DBDBDB;
-	height: 50%;
 }
-.head_map a {
+ul.head_map{
+	font-size: 1.5em;
+	display:table;
+	table-layout: fixed;
+	width:100%;		
+	border-bottom: 0.4em solid #525252;
+	margin:0;
+}
+
+ul.head_map a{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;	
 	color: #000000;
 	text-decoration: none;
 	font-size: 1.2em;
 }
-.head_map ul {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-}
+
 /*マップボタンの幅と位置を管理*/
-a.head_mapLink {
-	width: 15%;
-	padding: 0;
-	display: inline-block;
-}
-.head_mapLink {
-	list-style: none;
-	height: 100%;
-	width: 100%;
-}
 #head_mapThis {
 	background-color: #525252;
 	color: white;
-}
-#head_mapThis a {
-	color: #ffffff;
 }
 /*
 		中身		*/
@@ -157,14 +157,13 @@ height:200%;
 .works_btnLong{
 	display:inline-block;
 	width:79%;height:100%;
-	background-image: url("long-on.png");
-	background-size: contain;
-}
-.works_btnLongOn:hover{
-	width:100%;height:100%;
-	margin:0;
 	background-image: url("long.png");
 	background-size: contain;
+}
+.works_btnLong:hover{
+	width:79%;height:100%;
+	background-image: url("long-on.png");
+	background-size: contain: ;
 }
 
 

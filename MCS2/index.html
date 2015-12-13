@@ -5,10 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
 <link rel="stylesheet" media="(min-width: 640px)" href="min-640px().css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 <title>MCS</title>
 </head>
 
 <body>
+<!--ファーストビュー-->
 <article id="top_firstView"> 
   <!--ここからヘッダー-->
   <header class="head">
@@ -25,22 +27,23 @@
       </div>
     </article>
     <article class="head_map">
-      <ul>
-        <a class="head_mapLink" href="index.html">
+      <ul class="head_map">
+        <li class="head_mapLink"></li>
+        <a href="index.html">
         <li class="head_mapLink" id="head_mapThis">TOP</li>
-        </a> <a class="head_mapLink" href="about.html">
+        </a><a href="about.html">
         <li class="head_mapLink">ABOUT</li>
-        </a> <a class="head_mapLink" href="works.html">
+        </a><a href="works.html">
         <li class="head_mapLink">WORKS</li>
-        </a> <a class="head_mapLink" href="links.html">
+        </a><a href="links.html">
         <li class="head_mapLink">LINKS</li>
         </a>
+        <li class="head_mapLink"></li>
       </ul>
     </article>
   </header>
   
-  <!--ここからページ内容--> 
-  
+  <!--ここからページ内容-->
   <!--トップ画像-->
   <article class="top_topWrapper">
     <div class="top_topMCSWrap">
@@ -48,11 +51,11 @@
         <div class="top_topKansai">関西大学総合情報学部</div>
         <div class="top_topMCS">MCS</div>
       </div>
+		<div id="top_topUnder"></div>
     </div>
-    <div id="top_topUnder"></div>
-  </article>
-</article>
 
+  </article>
+</article><!--ここまでファーストビュー-->
 <!--ここから内容-->
 <article class="top_mainWrapper"> 
   <!--Now-->
