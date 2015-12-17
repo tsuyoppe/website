@@ -3,18 +3,36 @@
 
 
 /////////////////////////////////////////////////////////////////// */
-
-
-
+html, body {
+	height: 100%;
+	margin: 0;
+}
+li {
+	list-style: none;
+}
+/*
+		ヘッダー
+					*/
+					
 .head {
 	magin: 0 aute;
+	height: 80px;
+}
+.head_btn {
+	height: 45px;
 }
 .head_btnLeft {
 	float: left;
+	height: 100%;
+}
+#head_mcsLogo {
+	max-height: 100%;
+	width: auto;
 }
 .head_btnRight {
 	float: right;
 	padding: 0;
+	height: 100%;
 }
 .head_btnRight ul {
 	padding : 0;
@@ -22,115 +40,235 @@
 }
 .head_btnLink {
 	float: left;
+	height: 90%;
 	margin: 0;
-	list-style: none;
 }
-.head_map a {
-	color: #000000;
-	text-decoration: none;
-	font-size: 1.4em;
-}
+/*
+	 head_map
+				*/
 .head_map {
 	clear: both;
 	text-align: center;
-	border-bottom: 0.5em solid #525252;
 	padding: 0;
 	margin: 0;
 	background-color: #DBDBDB;
 }
-.head_map ul {
+ul.head_map {
+	font-size: 1.5em;
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	border-bottom: 0.4em solid #525252;
 	margin: 0;
-	padding: 0;
 }
-.head_mapLink {
-	display: inline-block;
-	list-style: none;
-	padding: 0.5em 0;
-	magin: 0;
-	width: 20%;
+ul.head_map a {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #000000;
+	text-decoration: none;
+	font-size: 1.2em;
 }
+/*マップボタンの幅と位置を管理*/
 #head_mapThis {
 	background-color: #525252;
+	color: white;
 }
-#head_mapThis a {
-	color: #ffffff;
-}
-.top_topWrapper {
-}
-.top_topWrapper .main {
-}
-.top_mainWrapper {
-}
-
-
-
+/*
+		中身		*/
+		
 
 /*
-		コンテンツ
-						*/
-
-　　/*　全体　*/					
-article.title{
-	width:1000px;
-	text-align:center;
+		 TOP画
+					*/
+.topImg {
+	width: 100%;
+	background-size: cover;
+	padding: 7% 0;
 }
-
-h1{
-	font-size:50px;
-	padding:20px;
-	width:300px;
-	background-color:#FFFFFF;
-	border-style:solid;
-	border-width:5px;
-	text-align:center;
+.topNameBlock {
+	background-color: rgba(255,255,255,0.5);
+	border: 0.4em solid #000;
+	width: 10em;
+	text-align: center;
+	margin: 0 auto;
 }
-	
-	/*　about　*/
-article.about_mainWrapper{
-	width:640px;
-	margin:0 auto;
+.topName {
+	padding: 0.5em;
+	font-size: 1.5em;
 }
-
-
-h2.about{
-	width:28px;
-	border-style:solid;
-	border-width:5px;
-	padding:5px;
-	display:inline-block;
+#topImg_about {
+	background-image: url(topPic.jpg);
 }
-
-.about_{
-	left:20px;
-	width:640px;
-	psition:absolute;
+#topImg_works {
+	background-image: url(topPic.jpg);
 }
-
-.about_title{
-	display:inline-block;
+#topImg_project {
+	background-image: url(topPic.jpg);
 }
-
-.about_department{
-	width:32%;
+#topImg_contents {
+	background-image: url(topPic.jpg);
 }
-
-.about_department p{
-	top:50%;
-	left:50%;	
-	position:absolute;
+#topImg_pressrelease {
+	background-image: url(topPic.jpg);
 }
-	
-.about_departmentPhoto{	
-	height:180px;
-	width:180px;
-	margin-left:10px;
-	background-color:#67A3F2;
-	border-radius:20px;
-	position:relative;
+#topImg_links {
+	background-image: url(topPic.jpg);
 }
+/*
 
-
-
+	   	ABOUT
+					*/		
+.about_mainWrapper {
+	pading: 0;
+	margin: 10em auto;
+	width: 100%;
+}
+.about_titleWrapper {
+	margin: 2em auto;
+	margin-top: 5em;
+	text-align: center;
+	width: 100%;
+}
+.about_titleNum {
+	display: inline-block;
+	font-size: 1.3em;
+	padding: 0.2em 0.1em;
+	margin: 0 0.5em;
+	border: 0.1em solid #000;
+}
+.about_titleTitle {
+	display: inline-block;
+	font-size: 1.3em;
+}
+.about_titleBar {
+	display: inline-block;
+	background-image: url(bar.png);
+	background-size: contain;
+	height: 10px;
+	margin: 0 1em
+}
+#about_section01 {
+	width: 50%;
+}
+#about_section02 {
+	width: 56%;
+}
+#about_section03 {
+	width: 60%;
+}
+#about_section04 {
+	width: 52%;
+}
+p.about {
+	width: 60%;
+	margin: 0 auto;
+	line-height: 1.5em;
+}
+#about_moveMCS {
+	margin: 2em auto;
+	text-align: center;
+	width: 70%
+}
+#about_moveMCS:before {
+	display: block;
+	padding-top: 56.25%;
+}
+#about_moveMCS iframe {
+	width: 100%;
+	hight: 100%;
+}
+.about_office {
+	text-align: center;
+	padding: 0;
+	width: 100%;
+}
+.about_officeItemWrapper {
+	display: inline-block;
+	margin: 0 1%;
+	width: 20%;
+}
+.about_officeItem {
+	padding-top: 100%;/*padding-topの基準はwidth*/
+	width: 100%;
+	background-image: url(officeItem03a.png);
+	background-size: cover;
+}
+.about_officeItem:hover {
+	background-image: url(officeItem03b.png);
+}
+#about_environmentTop {
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+#about_enviromentMap {
+	width: 40%;
+	height: 300px;
+	display: inline-block;
+}
+#about_enviromentMap:before {
+	display: block;
+	padding-top: 30%;
+}
+#about_enviromentMap iframe {
+	width: 100%;
+	height: 100%;
+}
+#about_emviromentP {
+	display: inline-block;
+	width: 30%;
+}
+#about_medican3Wrapper {
+	text-align: center;
+}
+#about_medican3P {
+	display: inline-block;
+	width: 30%;
+}
+#about_medican3img {
+	display: inline-block;
+	width: 200px;
+	height: 210px;
+	background-image: url(medican3.jpg);
+	background-size: cover;
+	margin-left: 3em;
+}
+/*
+		Works
+					*/
+				
+.works_mainWrapper {
+	margin: 0 auto;
+	margin-top: 0.5em;
+	width: 100%;
+	height: 200%;
+}
+.works_btnWrapper {
+	margin: 0 auto;
+	width: 100%;
+	height: 33%;
+}
+.works_btnShort {
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	background-image: url("short.png");
+	background-size: contain;
+	color: #EF090D;
+}
+.works_btnLong {
+	display: inline-block;
+	width: 79%;
+	height: 100%;
+	background-image: url("long.png");
+	background-size: contain;
+}
+.works_btnLong:hover {
+	background-image: url("long-on.png");
+	background-size: contain;
+}
 /*	
 		フッター
 					*/
@@ -140,10 +278,14 @@ h2.about{
 	height: auto;
 	padding: 0.1em 0;
 	text-align: center;
+	z-index: 3;
 }
 a.footer {
 	color: #ffffff;
 	text-decoration: none;
+}
+.footer_linkSubSection:hover {
+	text-decoration: underline;
 }
 .footer_map {
 	text-align: center;
@@ -219,6 +361,8 @@ input.footer, textarea.footer {
 }
 .form_send {
 	text-align: right;
+	width: 30em;
+	margin: 0 auto;
 }
 #footer_submitBtn {
 	padding: 0;
@@ -226,7 +370,7 @@ input.footer, textarea.footer {
 	background-color: #000;
 	color: #fff;
 	border-style: none;
-	cursor: pointer
+	cursor: pointer;
 }
 
 

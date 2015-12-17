@@ -4,28 +4,25 @@
 
 /////////////////////////////////////////////////////////////////// */
 html, body {
-	height: 102%;
+	height: 100%;
 	margin: 0;
 }
-
+#top_firstView {
+	height: 100%;
+}
 li{
 	list-style: none;
 }
-#top_firstView{
-	height:100%;	
-	margin-bottom:8%;
-}
-
 /*
 		ヘッダー
 					*/
 					
 .head {
-	margin: 0 auto;
-	height: 80px;
+	magin: 0 aute;
+	height: 15%;
 }
 .head_btn {
-	height: 45px;
+	height: 45%;
 }
 .head_btnLeft {
 	float: left;
@@ -67,7 +64,6 @@ ul.head_map{
 	table-layout: fixed;
 	width:100%;		
 	border-bottom: 0.4em solid #525252;
-	margin:0;
 }
 
 ul.head_map a{
@@ -84,56 +80,7 @@ ul.head_map a{
 	background-color: #525252;
 	color: white;
 }
-/*
-		中身		*/
-		
-		
 
-.top_topWrapper {
-	height: 100%-80px;
-	background-image: url("top_top.jpg");
-	background-size: cover;
-	color: white;
-	text-align: center;
-	position: relative;
-}
-.top_topMCSWrap {
-	padding: 17%;
-	/*padding:250px 0;*/
-	text-align: center;
-}
-.top_topName {
-	margin : auto;
-	width: 12em;
-	color: black;
-	border: 0.15em solid black;
-	background-color: rgba(255,255,255,0.7);
-}
-.top_topKansai {
-	font-size: 1em;
-	width: 90%;
-	border-bottom: 0.15em solid black;
-	margin: 0.5em auto;
-}
-.top_topMCS {
-	font-size: 2em;
-	margin: 0.1em auto;
-}
-#top_topUnder {
-	height: 50px;
-	margin : 0 auto;
-	background-image: url("top_topUnder.png");
-	background-size: contain;
-	position: absolute;
-	bottom: 0;
-}
-.try {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 1em 0 0 2em;
-	border-color: transparent transparent transparent #007bff;
-}
 /*
 		中身		*/
 		
@@ -169,7 +116,7 @@ ul.head_map a{
 	margin: 0.1em auto;
 }
 #top_topUnder {
-	height: 300px;
+	height: 10%;
 	margin : 0 auto;
 	background-image: url("top_topUnder.png");
 	background-size: contain;
@@ -178,11 +125,9 @@ ul.head_map a{
 	 Topページコンテンツ
 						*/
 .top_mainWrapper {
-	padding:0;
-	margin:
 }
 .top_mainContainer1 {
-	margin: 3% 0;
+	margin: 0;
 	margin-bottom: -40px;
 	position: relative;
 }

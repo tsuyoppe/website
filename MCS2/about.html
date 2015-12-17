@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
 <link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 <title>MCS</title>
 </head>
 
+<body>
 <!--ここからヘッダー-->
 <header class="head">
   <article class="head_btn">
     <div class="head_btnLeft">
-      <div class="head_btnLink"><img src="mcs.jpg" width="50" height="50"  alt="MCS_logo"></div>
+      <div class="head_btnLink" id="head_logo"><a href="index.html"><img id="head_mcsLogo" src="mcs.jpg" alt="mcs_logo"></a></div>
     </div>
     <div class="head_btnRight">
       <ul>
@@ -23,93 +25,125 @@
     </div>
   </article>
   <article class="head_map">
-    <ul>
-      <a href="index.html"><li class="head_mapLink">TOP</li></a>
-      <a href="about.html"><li class="head_mapLink" id="head_mapThis">ABOUT</li></a>
-      <a href="works.html"><li class="head_mapLink">WORKS</li></a>
-      <a href="links.html"><li class="head_mapLink">LINKS</li></a>
+    <ul class="head_map">
+      <li class="head_mapLink"></li>
+      <a href="index.html">
+      <li class="head_mapLink">TOP</li>
+      </a><a href="about.html">
+      <li class="head_mapLink" id="head_mapThis">ABOUT</li>
+      </a><a href="works.html">
+      <li class="head_mapLink">WORKS</li>
+      </a><a href="links.html">
+      <li class="head_mapLink">LINKS</li>
+      </a>
+      <li class="head_mapLink"></li>
     </ul>
   </article>
 </header>
 
 <!--ここからページ内容-->
+<!--Top画像-->
+<article class="topImg" id="topImg_about">
+	<div class="topNameBlock">
+		<div class="topName">ABOUT</div>
+	</div>
+</article>
+<!--本文-->
 <article class="about_mainWrapper">
-
-<article class="title">
-	<img src="" alt="about">
-	<h1 class="about">about</h1>
-</article>
-	<!--01 What is MCS?-->
-	<article class="about">
-		<h2 class="about">01</h2><div class="about_title">What is MCS?</div>
-    	<div class="about_">
-        	<p></p>
-        </div>
-    </article>
-	
-    <!--02 各局紹介-->
-    <article class="about">
-		<h2 class="about">02</h2><div class="about_title">各局紹介</div>
-        <div class="about_">
-			<div class="about_department"><div class="about_departmentPhoto"><img src="" alt="制作局"><p>制作局</p></div></div>
-        	<div class="about_department"><div class="about_departmentPhoto"><img src="" alt="技術局"><p>技術局</p></div></div>
-        	<div class="about_department"><div class="about_departmentPhoto"><img src="" alt="広報局"><p>広報局</p></div></div>
-         </div>
-		<img src="" alt="">
-    </article>
+  <article class="about_sectionWrapper">
+    <div class="about_titleWrapper">
+      <div class="about_titleNum">01</div>
+      <div class="about_titleTitle">What is MCS?</div>
+      <div class="about_titleBar" id="about_section01"></div>
+    </div>
+    <p class="about"> Media（メディア）	Creative（クリエイティブ)　Supporter（サポーター）の頭文字を取ってMCSと言います。関西大学公認の映像ボランティア団体です。関西大学　高槻キャンパスにて行われる学園祭のスタジオイベントやオープンキャンパスでのスタジオイベント、また、映画の自主制作、および、その映画を多くの方に見て頂けるよう学内外での上映会や学部生向けの校内テレビ番組の制作等を行っています。最近では高槻市の地域活性化プロジェクトにも参加しています。</p>
     
-    <!--03 環境-->
-	<article class="about">
-    	<h2 class="about">03</h2><div class="about_title">環境</div>
-        <div class="about_">
-			<div></div>
-  	  		<img src="" alt="map">
-        </div>
-  	  	<img src="" alt="">
+    <div id="about_moveMCS"><iframe width="640" height="360" src="https://www.youtube.com/embed/akNGmvApd3g?rel=0&autohide=1&theme=dark&color=white" frameborder="0" allowfullscreen></iframe></div>
+  </article>
+  <article class="about_sectionWrapper">
+    <div class="about_titleWrapper">
+      <div class="about_titleBar" id="about_section02"></div>
+      <div class="about_titleNum">02</div>
+      <div class="about_titleTitle">各局紹介</div>
+    </div>
+    <ul class="about_office">
+      <li class="about_officeItemWrapper"><div class="about_officeItem" id="about_officeItem01"></div></li>
+      <li class="about_officeItemWrapper"><div class="about_officeItem" id="about_officeItem02"></div></li>
+      <li class="about_officeItemWrapper"><div class="about_officeItem" id="about_officeItem03"></div></li>
+    </ul>
+  </article>
+  <article class="about_sectionWrapper">
+    <div class="about_titleWrapper">
+      <div class="about_titleNum">03</div>
+      <div class="about_titleTitle">環境</div>
+      <div class="about_titleBar" id="about_section03"></div>
+    </div>
+    <div id="about_environmentTop">
+      <div id="about_enviromentMap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31146.700616502883!2d135.583874647285!3d34.85890043879787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fdb89c68a7e5%3A0x94e056504f4ec5d9!2z56eB56uL6Zai6KW_5aSn5a2m57eP5ZCI5oOF5aCx5a2m6YOo!5e0!3m2!1sja!2sjp!4v1450105599915" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+      <p id="about_emviromentP">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+    </div>
+    <div id="about_enviromentBottom"></div>
+  </article>
+  <article class="about_sectionWrapper">
+    <div class="about_titleWrapper">
+      <div class="about_titleNum">04</div>
+      <div class="about_titleTitle">めでぃカンさん</div>
+      <div class="about_titleBar" id="about_section04"></div>
+    </div>
+    <div id="about_medican3Wrapper">
+    <p id="about_medican3P">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+    <div id="about_medican3img"></div>
+    </div>
     </article>
-    
-    <!--04 めでぃカンさん-->
-    <article class="about">
-		<h2 class="about">04</h2><div class="about_title">めでぃカンさん</div>
-        <div class="about_">
-			<div></div>
-  			<img src="" alt="めでぃカンさん">
-        </div>
-        <img src="" alt="">
-    </article>
-
-
 </article>
-	
-            
+
 <!--ここからフッター-->
 <footer class="foot">
   <article class="footer_map">
     <ul class="footer_mapBox" id="footer_linkTop">
-      <a class="footer" href="index.html"><li class="footer_linkMain">TOP</li></a>
-      <a class="footer" href=""><li class="footer_linkSubSection">Now</li></a>
-      <a class="footer" href=""><li class="footer_linkSubSection">News</li></a>
-      <a class="footer" href=""><li class="footer_linkSubSection">Twitter</li></a>
-      <a class="footer" href=""><li class="footer_linkSubSection">Facebook</li></a>
+      <a class="footer" href="index.html">
+      <li class="footer_linkMain">TOP</li>
+      </a> <a class="footer" href="">
+      <li class="footer_linkSubSection">Now</li>
+      </a> <a class="footer" href="">
+      <li class="footer_linkSubSection">News</li>
+      </a> <a class="footer" href="">
+      <li class="footer_linkSubSection">Twitter</li>
+      </a> <a class="footer" href="">
+      <li class="footer_linkSubSection">Facebook</li>
+      </a>
       </li>
     </ul>
     <ul class="footer_mapBox" id="footer_linkAbout">
-      <a class="footer" href="about.html"><li class="footer_linkMain">ABOUT</li></a>
-      <a class="footer" href=""><li class="footer_linkSubSection">What is MCS?</li></a>
-      <a class="footer" href=""><li class="footer_linkSubSection">各局紹介</li></a>
-      <a class="footer" href=""><li class="footer_linkSubSection">環境</li></a>
-      <a class="footer" href=""><li class="footer_linkSubSection">めでぃカンさん</li></a>
+      <a class="footer" href="about.html">
+      <li class="footer_linkMain">ABOUT</li>
+      </a> <a class="footer" href="">
+      <li class="footer_linkSubSection">What is MCS?</li>
+      </a> <a class="footer" href="">
+      <li class="footer_linkSubSection">各局紹介</li>
+      </a> <a class="footer" href="">
+      <li class="footer_linkSubSection">環境</li>
+      </a> <a class="footer" href="">
+      <li class="footer_linkSubSection">めでぃカンさん</li>
+      </a>
       </li>
     </ul>
     <ul class="footer_mapBox" id="footer_linkWorks">
-      <a class="footer" href="works.html"><li class="footer_linkMain">WORKS</li></a>
-      <a class="footer" href=""><li class="footer_linkSubSection">Project</li></a>
-      <a class="footer" href=""><li class="footer_linkSubSection">Contents</li></a>
-      <a class="footer" href=""><li class="footer_linkSubSection">PressReleas</li></a>
+      <a class="footer" href="works.html">
+      <li class="footer_linkMain">WORKS</li>
+      </a> <a class="footer" href="">
+      <li class="footer_linkSubSection">Project</li>
+      </a> <a class="footer" href="">
+      <li class="footer_linkSubSection">Contents</li>
+      </a> <a class="footer" href="">
+      <li class="footer_linkSubSection">PressReleas</li>
+      </a>
       </li>
     </ul>
     <ul class="footer_mapBox" id="footer_linkLinks">
-      <a class="footer" href="links.html"><li class="footer_linkMain">LINKS</li></a>
+      <a class="footer" href="links.html">
+      <li class="footer_linkMain">LINKS</li>
+      </a>
     </ul>
   </article>
   
